@@ -63,8 +63,8 @@ export default {
   },generate: {
     async routes() {
       const pages = await axios
-        .get('https://your-service-id.microcms.io/api/v1/blog?limit=100', {
-          headers: { 'X-API-KEY': 'your-api-key' }
+        .get('https://mczk.microcms.io/api/v1/blog?limit=100', {
+          headers: { 'X-API-KEY': 'd8d3d5dd-f732-48da-bb32-29ebf7de8220' }
         })
         .then((res) =>
           res.data.contents.map((content) => ({
